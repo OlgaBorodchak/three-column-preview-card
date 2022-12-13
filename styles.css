@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+}
+
+.col {
+    width: 33.33%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.col-one {
+    background-color: hsl(31, 77%, 52%);
+    background-image: url(icon-sedans.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 10%;
+    border-radius: 8px 0 0 8px;
+}
+
+.col-two {
+    background-color: hsl(184, 100%, 22%);
+    background-image: url(icon-suvs.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 10%;
+}
+
+.col-three {
+    background-color: hsl(179, 100%, 13%);
+    background-image: url(icon-luxury.svg);
+    background-repeat: no-repeat;
+    background-position: 20% 10%;
+    border-radius: 0 8px 8px 0;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 50px;
+}
+
+.par {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 95%);
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    border: none;
+    width: 146px;
+    padding: 10px 30px;
+    margin-top: 50px;
+}
+
+.btn-text-one {
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.btn-text-two {
+    color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.btn-text-three {
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+    text-decoration: none;
+    line-height: 25px;
+}
+
+.btn:hover {
+    border: solid  hsl(0, 0%, 95%) 2px;
+    background-color: transparent;
+    color:  hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+    main {
+        padding: 50px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .col-one {
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .col-three {
+        border-radius: 0 0 8px 8px ;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .col {
+        padding: 35px;
+    }
+}
